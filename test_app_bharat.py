@@ -4,8 +4,8 @@ from groq import Groq
 # ----------------- INIT ------------------
 st.set_page_config(page_title="Interview & Practice App", layout="wide")
 debug_mode = True
-
-groq_key = "xxxxxxxx"
+groq_key = st.secrets["GROQ_API_KEY"]
+#groq_key = "xxxxxxxx"
 client = Groq(api_key=groq_key)  # Replace with your actual Groq API key
 
 # ----------------- PROMPT HANDLERS ------------------
